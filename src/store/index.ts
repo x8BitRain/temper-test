@@ -8,15 +8,15 @@ export const usePostsStore = defineStore('posts', {
     ({
       posts: [],
       history: [],
+      error: null,
     } as PostsStore),
   actions: {
     async getPosts() {
       try {
         const request = await fetch(POSTS_URL)
         this.posts = await request.json()
-      } catch (error) {
-        await alert(error)
-        throw new Error(<string>error)
+      } catch (error: any | Error) {
+        this.handleError(error)
       }
     },
     timeTravel(selectedIndex: number) {
@@ -47,6 +47,10 @@ export const usePostsStore = defineStore('posts', {
         direction === MoveDirections.UP ? currentIndex - 1 : currentIndex + 1
       this.posts?.splice(newIndex, 0, currentPost)
       this.addHistoryItem(currentIndex, newIndex, currentPost, currentHistory)
+    },
+    handleError(error: string) {
+      this.error = error?.toString()
+      throw new Error(<string>error)
     },
   },
 })

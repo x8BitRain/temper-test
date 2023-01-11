@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { defineProps, computed } from 'vue'
-  import { usePostsStore } from '../store'
-  import { MoveDirections, Post } from '../types'
+  import { usePostsStore } from '../../store'
+  import { MoveDirections, Post } from '../../types'
   import ChevronUp from '~icons/mdi/chevron-up'
   import ChevronDown from '~icons/mdi/chevron-down'
 

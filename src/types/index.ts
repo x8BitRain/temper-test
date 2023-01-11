@@ -17,4 +17,5 @@ export interface HistoryItem {
 export type PostsStore = {
   posts: Post[]
   history: HistoryItem[]
+  error: string | null
 }

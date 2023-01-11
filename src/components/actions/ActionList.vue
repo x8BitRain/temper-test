@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import Action from './Action.vue'
-  import { usePostsStore } from '../store'
+  import { usePostsStore } from '../../store'
   import { storeToRefs } from 'pinia'
 
   const store = usePostsStore()

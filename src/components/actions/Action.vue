@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { defineProps } from 'vue'
-  import { HistoryItem } from '../types'
-  import { usePostsStore } from '../store'
+  import { HistoryItem } from '../../types'
+  import { usePostsStore } from '../../store'
 
   const store = usePostsStore()
   const { timeTravel } = store
