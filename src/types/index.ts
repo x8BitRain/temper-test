@@ -10,7 +10,7 @@ export interface Post {
 }
 
 export interface HistoryItem {
-  changeMade: string
+  description: string
   historySnapshot: Post[]
 }
 

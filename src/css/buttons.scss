@@ -1,0 +1,11 @@
+.tt-btn {
+  @apply font-semibold
+  text-temper-secondary
+  ml-3
+  rounded-sm
+  bg-temper
+  hover:bg-temper-600
+  px-3
+  py-2
+  active:bg-temper-700;
+}

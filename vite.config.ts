@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Icons({
-      defaultClass: 'icon',
+      defaultClass: 'tt-icon',
     }),
   ],
 })

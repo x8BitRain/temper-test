@@ -12,10 +12,14 @@
 </script>
 
 <template>
-  <div class="flex justify-around">
+  <div class="tt-app-container">
     <PostList />
     <ActionList />
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+  .tt-app-container {
+    @apply flex justify-around gap-16 drop-shadow-md h-full;
+  }
+</style>

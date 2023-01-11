@@ -15,10 +15,13 @@ export const usePostsStore = defineStore('posts', {
         const request = await fetch(POSTS_URL)
         this.posts = await request.json()
       } catch (error) {
+        await alert(error)
         throw new Error(<string>error)
       }
     },
     timeTravel(selectedIndex: number) {
+      // Sets the posts state to a saved history snapshot by index
+      // and removes history items before the selected one
       this.posts = this.history[selectedIndex].historySnapshot
       this.history = this.history.slice(selectedIndex + 1)
     },
@@ -28,18 +31,21 @@ export const usePostsStore = defineStore('posts', {
       post: Post,
       historySnapshot: Post[]
     ) {
+      // Appends a history item object to the history state with string description
       const historyItem = {
-        changeMade: `Moved post ${post.id} from index ${currentIndex} to index ${newIndex}`,
-        historySnapshot: [...historySnapshot],
+        description: `Moved post ${post.id} from index ${currentIndex} to index ${newIndex}`,
+        historySnapshot,
       }
-      this.history.unshift(historyItem)
+      this.history?.unshift(historyItem)
     },
     movePost(direction: MoveDirections, currentIndex: number) {
+      // Clones the current post state and moves the current post by index forward or backward
+      // in the posts state depending on direction then constructs a history item with addHistoryItem()
       const currentHistory = [...this.posts]
-      const currentPost = this.posts.splice(currentIndex, 1)[0]
+      const currentPost = this.posts?.splice(currentIndex, 1)[0]
       const newIndex =
         direction === MoveDirections.UP ? currentIndex - 1 : currentIndex + 1
-      this.posts.splice(newIndex, 0, currentPost)
+      this.posts?.splice(newIndex, 0, currentPost)
       this.addHistoryItem(currentIndex, newIndex, currentPost, currentHistory)
     },
   },

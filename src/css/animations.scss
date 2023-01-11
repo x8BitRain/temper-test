@@ -1,0 +1,14 @@
+.posts-list-order-move {
+  transition: transform 0.5s;
+}
+
+.action-list-move, /* apply transition to moving elements */
+.action-list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.action-list-enter-from,
+.action-list-leave-to {
+  opacity: 0;
+}
