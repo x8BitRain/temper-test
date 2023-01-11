@@ -47,6 +47,6 @@
   }
   // .tt-icon class name is set by unplugin-icons config in vite.config.js
   .tt-icon {
-    @apply h-7 w-7 rounded-sm cursor-pointer hover:bg-gray-200;
+    @apply h-7 w-7 rounded-sm cursor-pointer text-temper-purple hover:bg-gray-200;
   }
 </style>

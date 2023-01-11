@@ -3,9 +3,9 @@
   import { usePostsStore } from './store'
   import {storeToRefs} from "pinia";
   import ActionList from './components/actions/ActionList.vue'
-  import BackgroundSlice from './components/BackgroundSlice.vue'
+  import BackgroundSlice from './components/misc/BackgroundSlice.vue'
   import Error from "./components/Error.vue";
-  import PostList from './components/posts/PostList.vue'
+  import PostList from './components/misc/PostList.vue'
 
   const store = usePostsStore()
   const { error } = storeToRefs(store)

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-  import Post from './Post.vue'
   import { usePostsStore } from '../../store'
   import { storeToRefs } from 'pinia'
+  import Post from './Post.vue'
+  import Loading from '../misc/Loading.vue'
 
   const store = usePostsStore()
   const { posts } = storeToRefs(store)
@@ -23,6 +24,7 @@
           :key="post.id"
         />
       </transition-group>
+      <Loading v-else />
     </div>
   </div>
 </template>
