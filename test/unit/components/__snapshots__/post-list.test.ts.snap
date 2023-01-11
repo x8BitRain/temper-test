@@ -1,0 +1,23 @@
+// Vitest Snapshot v1
+
+exports[`App.vue > should render 1`] = `
+"<div class=\\"tt-app-container\\" data-v-7a7a37b1=\\"\\">
+  <div class=\\"tt-background-slice\\" data-v-3ea0bed3=\\"\\" data-v-7a7a37b1=\\"\\"></div>
+  <div class=\\"tt-post-list\\" data-v-60674a44=\\"\\" data-v-7a7a37b1=\\"\\">
+    <h1 class=\\"tt-post-list__header\\" data-v-60674a44=\\"\\">Sortable Post List</h1>
+    <div data-v-60674a44=\\"\\"><svg class=\\"tt-icon\\" viewBox=\\"0 0 24 24\\" width=\\"1.2em\\" height=\\"1.2em\\" data-v-f217e8d9=\\"\\" data-v-60674a44=\\"\\">
+        <path fill=\\"currentColor\\" d=\\"M12 4V2A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8Z\\"></path>
+      </svg></div>
+  </div>
+  <div class=\\"tt-action-list\\" data-v-d0f28be6=\\"\\" data-v-7a7a37b1=\\"\\">
+    <div class=\\"tt-action-list__header-container\\" data-v-d0f28be6=\\"\\">
+      <h1 class=\\"tt-action-list__header-text\\" data-v-d0f28be6=\\"\\">List of actions committed</h1>
+    </div>
+    <div class=\\"tt-action-list__item-container\\" data-v-d0f28be6=\\"\\">
+      <div class=\\"tt-action-item-placeholder\\" data-v-cea37cc8=\\"\\" data-v-d0f28be6=\\"\\">
+        <div data-v-cea37cc8=\\"\\">No actions yet...</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

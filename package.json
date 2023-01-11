@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "cross-env MODE=test vitest",
     "coverage": "vitest --coverage"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/test-utils": "^2.2.7",
     "autoprefixer": "latest",
+    "cross-env": "^7.0.3",
     "eslint": "^8.31.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.8.0",

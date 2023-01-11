@@ -11,6 +11,7 @@
   const { error } = storeToRefs(store)
 
   onBeforeMount(async () => {
+    if (import.meta.vitest) return // If testing don't get posts
     await store.getPosts()
   })
 </script>

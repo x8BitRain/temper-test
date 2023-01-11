@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, beforeEach } from 'vitest'
-import App from '../src/App.vue'
-import PostList from '../src/components/posts/PostList.vue'
-import ActionList from '../src/components/actions/ActionList.vue'
+import App from '../../../src/App.vue'
+import PostList from '../../../src/components/posts/PostList.vue'
+import ActionList from '../../../src/components/actions/ActionList.vue'
 import { setActivePinia, createPinia } from 'pinia'
-import { usePostsStore } from '../src/store'
-import { postData, historyData } from './mock/data'
-import { actionObjects, postObjects } from './helpers/pageObjects'
+import { usePostsStore } from '../../../src/store'
+import { postData, historyData } from '../../mock/data'
+import { actionObjects, postObjects } from '../../helpers/pageObjects'
 
 const POST_COUNT = 5
 const ACTION_COUNT = 3

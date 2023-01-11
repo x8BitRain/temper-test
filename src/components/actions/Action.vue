@@ -15,7 +15,7 @@
 <template>
   <div class="tt-action-item">
     <div>{{ historyItem.description }}</div>
-    <button class="tt-btn" @click="timeTravel(index)">Time Travel</button>
+    <button class="tt-btn tt-btn--time-travel" @click="timeTravel(index)">Time Travel</button>
   </div>
 </template>
 

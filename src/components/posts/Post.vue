@@ -27,11 +27,13 @@
     <div>{{ post.title }}</div>
     <div class="tt-post-item__icon-container">
       <ChevronUp
-        v-show="!isTopPost"
+        v-if="!isTopPost"
+        class="tt-btn--up-arrow"
         @click="movePost(MoveDirections.UP, index)"
       />
       <ChevronDown
-        v-show="!isBottomPost"
+        class="tt-btn--down-arrow"
+        v-if="!isBottomPost"
         @click="movePost(MoveDirections.DOWN, index)"
       />
     </div>
