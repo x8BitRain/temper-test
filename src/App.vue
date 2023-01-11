@@ -5,7 +5,7 @@
   import ActionList from './components/actions/ActionList.vue'
   import BackgroundSlice from './components/misc/BackgroundSlice.vue'
   import Error from "./components/Error.vue";
-  import PostList from './components/misc/PostList.vue'
+  import PostList from './components/posts/PostList.vue'
 
   const store = usePostsStore()
   const { error } = storeToRefs(store)

@@ -4,9 +4,10 @@ export enum MoveDirections {
 }
 
 export interface Post {
-  id: string
+  id: number
+  userId: number
   title: string
-  content: string
+  body: string
 }
 
 export interface HistoryItem {

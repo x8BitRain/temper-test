@@ -10,4 +10,7 @@ export default defineConfig({
       defaultClass: 'tt-icon',
     }),
   ],
+  test: {
+    environment: 'happy-dom',
+  },
 })
