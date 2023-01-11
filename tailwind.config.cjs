@@ -4,6 +4,9 @@ module.exports = {
   content: [],
   theme: {
     extend: {
+	    minWidth: {
+		    'xsm': '280px',
+	    },
 			minHeight: {
 				'post-card': '90px',
 			},

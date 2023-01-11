@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
   },
   "dependencies": {
+    "@vue/test-utils": "^2.2.7",
     "pinia": "^2.0.28",
     "vue": "^3.2.45"
   },

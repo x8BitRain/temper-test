@@ -26,6 +26,6 @@
 
 <style scoped lang="scss">
   .tt-app-container {
-    @apply flex justify-around gap-16 drop-shadow-md h-full;
+    @apply flex justify-around max-w-5xl m-auto min-w-xsm gap-16 drop-shadow-md h-full max-md:block;
   }
 </style>
