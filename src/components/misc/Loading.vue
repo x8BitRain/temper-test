@@ -2,7 +2,7 @@
   <Loading />
 </template>
 
-<script setup>
+<script setup lang="ts">
   import Loading from '~icons/mdi/loading'
 </script>
 
