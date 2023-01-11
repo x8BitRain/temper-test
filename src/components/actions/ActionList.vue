@@ -37,15 +37,15 @@
 
 <style scoped lang="scss">
   .tt-action-list {
-    @apply block flex-1;
+    @apply block flex-1 rounded-md;
     &__header-container {
-      @apply bg-white;
+      @apply bg-white rounded-tr-md rounded-tl-md;
     }
     &__header-text {
-      @apply font-semibold bg-white p-4 text-gray-800 text-xl;
+      @apply font-semibold bg-white p-4 text-gray-600 text-xl rounded-tr-md rounded-tl-md;
     }
     &__item-container {
-      @apply p-4 bg-gray-100 max-h-[90%] overflow-auto;
+      @apply p-4 bg-gray-100 max-h-[90%] overflow-auto rounded-br-md rounded-bl-md;
       &--padded {
         @apply pb-24;
       }

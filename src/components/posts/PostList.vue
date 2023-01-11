@@ -31,7 +31,7 @@
   .tt-post-list {
     @apply block flex-1;
     &__header {
-      @apply text-3xl font-semibold py-4;
+      @apply text-3xl font-semibold py-4 text-white;
     }
   }
 </style>

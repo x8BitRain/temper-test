@@ -2,13 +2,25 @@
   transition: transform 0.5s;
 }
 
-.action-list-move, /* apply transition to moving elements */
 .action-list-enter-active,
-.list-leave-active {
-  transition: all 0.5s ease;
+.action-list-leave-active,
+.action-list-move {
+  transition: 500ms cubic-bezier(0.59, 0.12, 0.34, 0.95);
+  transition-property: opacity, transform;
 }
 
-.action-list-enter-from,
+.action-list-enter {
+  opacity: 0;
+  transform: translateX(50px) scaleY(0.5);
+}
+
+.action-list-enter-to {
+  opacity: 1;
+  transform: translateX(0) scaleY(1);
+}
+
 .action-list-leave-to {
   opacity: 0;
+  transform: scaleY(0);
+  transform-origin: center top;
 }

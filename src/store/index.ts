@@ -49,7 +49,7 @@ export const usePostsStore = defineStore('posts', {
       this.addHistoryItem(currentIndex, newIndex, currentPost, currentHistory)
     },
     handleError(error: string) {
-      this.error = error?.toString()
+      this.error = error?.toString() || error
       throw new Error(<string>error)
     },
   },
